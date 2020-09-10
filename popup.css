@@ -29,8 +29,10 @@
     background: #EEEEEE;
     outline:none;
 }
+
 #name-input {
     border:2px solid #0485ff;
+    margin: 10px;
 }
 
 .success {
