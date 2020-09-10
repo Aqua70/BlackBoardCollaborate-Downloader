@@ -22,7 +22,9 @@ const download = () =>{
     chrome.tabs.query({active: true, currentWindow: true}, function(tabs) {
         const inputElement = document.getElementById("name-input")
         chrome.tabs.sendMessage(tabs[0].id, {download : true, name : inputElement.value}, (response) => {
-            
+            if (chrome.runtime.lastError){
+                response = {success : 0, message : "Go to a BBC video and wait until the BBC video has loaded"}
+            }
             if (messageExists)
                 document.body.removeChild(currentMessage)
 
