@@ -2,10 +2,6 @@ const download = (url, name) => {
     if (!url) {
     throw new Error("Resource URL not provided! You need to provide one");
     }
-    if (chrome.runtime.lastError){
-        console.log("asdaerrro");
-        return
-    }
     return fetch(url)
     .then(response => {
         return response.blob()
