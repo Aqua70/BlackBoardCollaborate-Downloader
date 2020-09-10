@@ -1,0 +1,40 @@
+{
+  "manifest_version": 2,
+  "name": "Black Board Collaborate Downloader",
+  "version": "0.1",
+  "content_scripts": [
+    {
+      "matches": [
+        "<all_urls>"
+      ],
+      "js": ["content.js"]
+    }
+  ],
+  "background": {
+    "scripts" : [
+      "background.js"
+    ]
+  },
+  "browser_action":{
+    "default_popup" : "popup.html",
+    "default_title" : "1234",
+    "default_icon": {
+      "16": "images/get_started16.png",
+      "32": "images/get_started32.png",
+      "48": "images/get_started48.png",
+      "128": "images/get_started128.png"
+    }
+  },
+"icons": {
+  "16": "images/get_started16.png",
+  "32": "images/get_started32.png",
+  "48": "images/get_started48.png",
+  "128": "images/get_started128.png"
+},
+"permissions": [
+  "contextMenus", "<all_urls>", "tabs", "webNavigation", "https://solr-aws-elb-production.ratemyprofessors.com//solr/rmp/select/?solrformat=true&rows=4000&wt=json&json.wrf=noCB&callback=noCB&q=*%3A*+AND+schoolid_s%3A1484&defType=edismax&qf=teacherfirstname_t%5E2000+teacherlastname_t%5E2000+teacherfullname_t%5E2000+autosuggest&bf=pow(total_number_of_ratings_i%2C2.1)&sort=total_number_of_ratings_i+desc&siteName=rmp&rows=20&start=0&fl=pk_id+teacherfirstname_t+teacherlastname_t+total_number_of_ratings_i+averageratingscore_rf+schoolid_s&fq="
+]
+
+
+
+}
