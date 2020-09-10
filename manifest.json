@@ -12,22 +12,21 @@
   ],
   "browser_action":{
     "default_popup" : "popup.html",
-    "default_title" : "1234",
     "default_icon": {
-      "16": "images/get_started16.png",
-      "32": "images/get_started32.png",
-      "48": "images/get_started48.png",
-      "128": "images/get_started128.png"
+      "16": "images/bbclogo16.png",
+      "32": "images/bbclogo32.png",
+      "48": "images/bbclogo48.png",
+      "128": "images/bbclogo64.png"
     }
   },
 "icons": {
-  "16": "images/get_started16.png",
-  "32": "images/get_started32.png",
-  "48": "images/get_started48.png",
-  "128": "images/get_started128.png"
+  "16": "images/bbclogo16.png",
+  "32": "images/bbclogo32.png",
+  "48": "images/bbclogo48.png",
+  "128": "images/bbclogo64.png"
 },
 "permissions": [
-  "<all_urls>", "tabs"
+  "tabs"
 ]
 
 
