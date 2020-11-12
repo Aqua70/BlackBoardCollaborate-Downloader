@@ -5,7 +5,7 @@
   "content_scripts": [
     {
       "matches": [
-        "https://ca.bbcollab.com/collab/ui/session/playback"
+        "https://*.bbcollab.com/collab/ui/session/playback/*"
       ],
       "js": ["content.js"]
     }
