@@ -1,11 +1,11 @@
 {
   "manifest_version": 2,
   "name": "Black Board Collaborate Downloader",
-  "version": "1.0",
+  "version": "1.2",
   "content_scripts": [
     {
       "matches": [
-        "https://*.bbcollab.com/collab/ui/session/playback/*"
+        "https://*.bbcollab.com/*"
       ],
       "js": ["content.js"]
     }
