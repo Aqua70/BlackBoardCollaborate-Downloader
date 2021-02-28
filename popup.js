@@ -1,6 +1,6 @@
 let messageExists = false
 let currentMessage = undefined
-//test
+//test123
 const createMessage = (response) =>{
     messageExists = true
     currentMessage = document.createElement("p")
